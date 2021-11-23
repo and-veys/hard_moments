@@ -36,7 +36,7 @@ void mySort(vector<T>& v) {
 int Count_Find(ifstream& f) {
 	int counter = 0;
 	string str;
-	string vm = "aeiouy";
+	string vm = "aeiouyAEIOUY";
 	while(!f.eof()) {
         getline(f, str);
 		counter += count_if(str.begin(), str.end(), [&vm](char n){return vm.find(n) != -1;});		 
@@ -47,7 +47,7 @@ int Count_Find(ifstream& f) {
 int Count_For(ifstream& f) {
 	int counter = 0;
 	string str;
-	string vm = "aeiouy";
+	string vm = "aeiouyAEIOUY";
 	while(!f.eof()) {
         getline(f, str);
 		counter += count_if(str.begin(), str.end(), [&vm](char n){
@@ -62,7 +62,7 @@ int Count_For(ifstream& f) {
 int For_Find(ifstream& f) {
 	int counter = 0;
 	string str;
-	string vm = "aeiouy";
+	string vm = "aeiouyAEIOUY";
 	int n;
 	while(!f.eof()) {
         getline(f, str);
@@ -81,7 +81,7 @@ int For_Find(ifstream& f) {
 int For_For(ifstream& f) {
 	int counter = 0;
 	string str;
-	string vm = "aeiouy";
+	string vm = "aeiouyAEIOUY";
 	while(!f.eof()) {
         getline(f, str);
 		for(char ch : vm) {
